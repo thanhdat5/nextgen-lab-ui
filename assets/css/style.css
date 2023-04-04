@@ -245,6 +245,135 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 20px;
+}
+.ntg-community .ntg-community-update .content {
+  padding: 32px 37px 32px 32px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.ntg-community .ntg-community-update .content .ntg-content-img-items.slick-slider .slick-next {
+  right: 12px;
+}
+.ntg-community .ntg-community-update .content .ntg-content-img-items.slick-slider .slick-next::before {
+  content: url(../images/arrow-next.png);
+  padding: 115px 11px;
+  background: #16181F;
+  opacity: 0.8;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.ntg-community .ntg-community-update .content .ntg-content-img-items.slick-slider .slick-next.slick-arrow.slick-disabled {
+  display: none;
+}
+.ntg-community .ntg-community-update .content .ntg-content-img-items.slick-slider .slick-prev {
+  left: 0px;
+  z-index: 10;
+}
+.ntg-community .ntg-community-update .content .ntg-content-img-items.slick-slider .slick-prev::before {
+  content: url(../images/arrow-prev.png);
+  padding: 115px 11px;
+  background: #16181F;
+  opacity: 0.8;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.ntg-community .ntg-community-update .content .ntg-content-img-items.slick-slider .slick-prev.slick-arrow.slick-disabled {
+  display: none !important;
+}
+.ntg-community .ntg-community-update .content .ntg-content-img-items.slick-slider .slick-list {
+  border-radius: 20px;
+}
+.ntg-community .ntg-community-update .content .ntg-new-items .ntg-new-item {
+  padding: 0 13px;
+  margin-bottom: 19px;
+}
+.ntg-community .ntg-community-update .content .ntg-new-items .ntg-new-item .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.ntg-community .ntg-community-update .content .ntg-new-items .ntg-new-item .time {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+}
+.ntg-community .ntg-our-product .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 34px;
+}
+.ntg-community .ntg-our-product .ntg-our-product-items.slick-slider .slick-prev {
+  top: -32px;
+  left: 94%;
+}
+.ntg-community .ntg-our-product .ntg-our-product-items.slick-slider .slick-prev::before {
+  content: url(../images/arrow-prev.png);
+}
+.ntg-community .ntg-our-product .ntg-our-product-items.slick-slider .slick-next {
+  right: 17px;
+  top: -32px;
+}
+.ntg-community .ntg-our-product .ntg-our-product-items.slick-slider .slick-next::before {
+  content: url(../images/arrow-next.png);
+}
+.ntg-community .ntg-our-product .ntg-our-product-items .ntg-our-product-item img {
+  width: 95%;
+  margin: auto;
+}
+.ntg-community .ntg-our-product .ntg-our-product-items .ntg-our-product-item .ntg-prod-info {
+  margin-top: 16px;
+  padding-left: 11.8px;
+}
+.ntg-community .ntg-our-product .ntg-our-product-items .ntg-our-product-item .ntg-prod-info .icon-game {
+  width: auto;
+  margin: 0;
+  margin-right: 20px;
+}
+.ntg-community .ntg-our-product .ntg-our-product-items .ntg-our-product-item .ntg-prod-info .ntg-prod-des .ntg-prod-des-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.ntg-community .ntg-our-product .ntg-our-product-items .ntg-our-product-item .ntg-prod-info .ntg-prod-des .ntg-prod-des-content {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #D9D9D9;
+}
+.ntg-gaming {
+  padding: 60px 208px;
+  background-image: url(../images/bg-gaming.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ntg-gaming .ntg-gaming-content-right-items {
+  margin-top: 200px;
+}
+.ntg-gaming .ntg-gaming-content-right-items.slick-dotted .slick-dots {
+  top: -196px;
+}
+.ntg-gaming .ntg-gaming-content-right-items.slick-dotted .slick-dots li {
+  width: 133px;
+  margin: 0 16px;
+}
+.ntg-gaming .ntg-gaming-content-right-items.slick-dotted .slick-dots #slick-slide-control30::before {
+  content: url(../images/icon-gaming-1.png);
+}
+.ntg-gaming .ntg-gaming-content-right-items.slick-dotted .slick-dots #slick-slide-control31::before {
+  content: url(../images/icon-gaming-2.png);
+}
+.ntg-gaming .ntg-gaming-content-right-items.slick-dotted .slick-dots #slick-slide-control32::before {
+  content: url(../images/icon-gaming-3.png);
+}
+.ntg-gaming .ntg-gaming-content-right-items.slick-dotted .slick-dots #slick-slide-control33::before {
+  content: url(../images/icon-gaming-4.png);
 }
 
 .mb-build {
