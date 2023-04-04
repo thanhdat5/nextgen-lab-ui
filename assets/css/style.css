@@ -54,17 +54,18 @@ body {
   top: 0;
   z-index: 999;
 }
+.ntg-navbar.ntg-navbar-fixed {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  padding: 36px 0;
+}
 .ntg-navbar.sticky {
   padding: 16px 0;
   background: rgba(88, 50, 178, 0.5);
   -webkit-backdrop-filter: blur(14px);
           backdrop-filter: blur(14px);
   animation: slide-down 0.5s;
-}
-.ntg-navbar.expanded {
-  background: rgba(88, 50, 178, 0.5);
-  -webkit-backdrop-filter: blur(14px);
-          backdrop-filter: blur(14px);
 }
 .ntg-navbar .navbar-brand {
   padding: 0;
@@ -220,10 +221,11 @@ body {
 }
 .ntg-about .ntg-about-content {
   display: inline-flex;
-  padding: 39px 208px;
+  padding: 39px 208px 10px 208px;
 }
 .ntg-about .ntg-about-content .content-left {
   margin-top: 125px;
+  margin-bottom: 139px;
 }
 .ntg-about .ntg-about-content .content-left .title {
   font-weight: 700;
@@ -234,6 +236,15 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+}
+
+.ntg-community {
+  padding: 60px 208px;
+}
+.ntg-community .ntg-community-update .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .mb-build {
