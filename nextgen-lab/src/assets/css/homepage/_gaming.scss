@@ -1,0 +1,40 @@
+.ntg-gaming{
+    padding: 60px 208px;
+    background-image: url(../../images/bg-gaming.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .ntg-gaming-content-right-items {
+        margin-top: 200px;
+        &.slick-dotted{
+            .slick-dots{
+                top: -196px;
+                
+                li{
+                    width: 133px;
+                    margin: 0 16px;
+                }
+                #slick-slide-control30{
+                    &::before{
+                        content: url(../../images/icon-gaming-1.png);
+                    }
+                }
+                #slick-slide-control31{
+                    &::before{
+                        content: url(../../images/icon-gaming-2.png);
+                    }
+                }
+                #slick-slide-control32{
+                    &::before{
+                        content: url(../../images/icon-gaming-3.png);
+                    }
+                }
+                #slick-slide-control33{
+                    &::before{
+                        content: url(../../images/icon-gaming-4.png);
+                    }
+                }
+            }
+        }
+    }
+}

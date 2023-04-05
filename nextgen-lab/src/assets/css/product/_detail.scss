@@ -1,0 +1,35 @@
+.ngl-product-detail {
+  background-image: url(../../images/products/bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% auto;
+  position: relative;
+  .decor {
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    background-image: url(../../images/products/decor.png);
+    background-size: cover;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.1));
+    z-index: 2;
+    @media (max-width: 1199px) {
+      display: none;
+    }
+    &.decor1 {
+      top: -52px;
+      right: 23.5%;
+    }
+    &.decor2 {
+      width: 34px;
+      height: 34px;
+      top: 112px;
+      left: 13.6%;
+    }
+    &.decor3 {
+      width: 48px;
+      height: 48px;
+      top: 392px;
+      right: 32%;
+    }
+  }
+}

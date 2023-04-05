@@ -1,0 +1,48 @@
+.ntg-about {
+  background-image: url(../../images/bg-about.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .circle-1 {
+    position: absolute;
+    bottom: -39px;
+    left: 43%;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .circle-2 {
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .ntg-about-content {
+    padding: 38px 0;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    .title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      @media (max-width: 991px) {
+        font-size: 30px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+    }
+
+    .content {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
