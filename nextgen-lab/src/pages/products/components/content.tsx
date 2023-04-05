@@ -6,7 +6,7 @@ type Props = {
 const ProductContent = ({ data }: Props) => {
     return <div className='ngl-product-content'>
         <div className='container'>
-            {data.content}
+            {data?.content}
         </div>
     </div>
 }

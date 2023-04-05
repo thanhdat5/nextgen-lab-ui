@@ -6,9 +6,9 @@ type Props = {
 const ProductFeatures = ({ data }: Props) => {
     return <div className='ngl-product-features'>
         <div className='container'>
-            <div className={`row ${data.featuresClassName}`}>
+            <div className={`row ${data?.featuresClassName}`}>
                 {
-                    data.features?.map((f, idx) => (
+                    data?.features?.map((f, idx) => (
                         <div className='col' key={idx}>
                             <div className={`ngl-product-feature ${!f.title ? 'd-flex' : ''}`}>
                                 {
