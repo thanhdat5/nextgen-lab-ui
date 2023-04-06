@@ -1,0 +1,46 @@
+.ngl-product-summary {
+  padding-bottom: 20px;
+  background-size: cover;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  overflow: hidden;
+  @media (max-width: 1199px) {
+    padding: 30px 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1142.11px;
+    height: 652.18px;
+    left: 70px;
+    top: -366px;
+    background: linear-gradient(90deg, #0047ff 0.89%, #48f3ff 98.21%);
+    filter: blur(200px);
+  }
+  * {
+    position: relative;
+  }
+  span {
+    color: #088ff5;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    @media (max-width: 991px) {
+      margin: 20px 0;
+    }
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 5px;
+    @media (max-width: 767px) {
+      font-size: 30px;
+      line-height: 1.5;
+    }
+  }
+}

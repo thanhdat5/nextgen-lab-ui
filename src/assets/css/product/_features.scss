@@ -1,0 +1,40 @@
+.ngl-product-features {
+  padding-top: 60px;
+  .row {
+    --bs-gutter-x: 32px;
+    --bs-gutter-y: 32px;
+    @media (max-width: 991px) {
+      --bs-gutter-x: 16px;
+      --bs-gutter-y: 16px;
+    }
+  }
+  .ngl-product-feature {
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+    .ngl-pf-header {
+      margin-top: -10px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      width: 100%;
+      span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #088ff5;
+      }
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      margin-right: 11px;
+    }
+  }
+}

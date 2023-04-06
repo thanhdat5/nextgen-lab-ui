@@ -1,0 +1,27 @@
+body {
+  background: $background-color;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #e1e1e1;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(34, 23, 71);
+}
+
+
+
+@media (min-width: 1024px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+      max-width: 864px;
+  }
+}
