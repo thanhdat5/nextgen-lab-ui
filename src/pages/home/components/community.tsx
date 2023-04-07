@@ -8,7 +8,7 @@ const HomepageCommunity = () => {
         <div className="container">
             <div className="container-fluid">
                 <div className="ntg-community-update">
-                    <div className="title"> Community Update </div>
+                    <div className="ntg-title"> Community Update </div>
                     <div className="content">
                         <div className="row">
                             <div className="col-12 col-md-4 mb-md-0 mb-3">
@@ -89,7 +89,7 @@ const HomepageCommunity = () => {
                     </div>
                 </div>
                 <div className="ntg-our-product">
-                    <div className="title"> Our Products </div>
+                    <div className="ntg-title"> Our Products </div>
                     <div className="ntg-our-product-items">
                         {
                             PRODUCTS.map(p => (
