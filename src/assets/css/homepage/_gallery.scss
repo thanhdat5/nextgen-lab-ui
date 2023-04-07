@@ -1,0 +1,35 @@
+.ntg-gallery {
+  position: relative;
+  margin-top: 40px;
+  .ntg-gallery-img {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 10px;
+  }
+  .ntg-gallery-box {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-right: 178px;
+    margin-left: 0;
+
+    .ntg-gallery-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 47px 224px 42px 18px;
+    }
+  }
+  @media (max-width: 767px) {
+    .ntg-gallery-img {
+      top: 48px;
+    }
+    .ntg-gallery-box {
+      margin-right: 0;
+      .ntg-gallery-text {
+        padding: 262px 47px 42px 18px;
+        text-align: center;
+      }
+    }
+  }
+}

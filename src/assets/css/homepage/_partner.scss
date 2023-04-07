@@ -1,0 +1,15 @@
+.ntg-partner {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 0;
+  .ntg-partner-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    @media (max-width:767px) {
+        padding: 20px;
+    }
+    .ntg-partner-item {
+      border: 1px solid;
+    }
+  }
+}

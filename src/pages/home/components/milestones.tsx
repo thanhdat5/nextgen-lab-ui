@@ -6,7 +6,7 @@ import Players from "../../../assets/images/milestones/Players.png";
 const HomepageMilestones = () => {
     return <section className="ngl-milestones">
         <div className="container">
-            <div className="ngl-milestones-title">Milestones</div>
+            <div className="ntg-title">Milestones</div>
             <div className="row">
                 <div className="col-4">
                     <div className="ngl-milestone">
