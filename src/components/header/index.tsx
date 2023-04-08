@@ -5,10 +5,7 @@ import Link from "next/link";
 const NHeader = () => {
     return <nav className="ntg-navbar navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
-            <Link className="navbar-brand order-first" href="/" onClick={()=>{
-                window.location.href = '/'
-                
-            }}>
+            <Link className="navbar-brand order-first" href="/">
                 <Image src={Logo} alt="Next Gen" />
             </Link>
             <button

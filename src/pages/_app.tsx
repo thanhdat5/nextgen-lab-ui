@@ -15,7 +15,6 @@ export default function App({ Component, pageProps }: AppProps) {
     if (typeof document !== undefined) {
       require("bootstrap/dist/js/bootstrap");
       require("jquery");
-      require("../assets/plugins/slick/slick");
       require("../assets/js/main");
     }
   }, [router.events]);
