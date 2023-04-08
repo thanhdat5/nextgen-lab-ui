@@ -1,0 +1,49 @@
+.ntg-our-community {
+  &_box {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    padding: 34px 30px;
+   
+    .ntg-icon-social {
+      display: flex;
+      gap: 16px;
+    }
+    .ntg-description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 0px 48px;
+    }
+    .ntg-button {
+      button {
+        background: #088ff5;
+        border-radius: 5px;
+        border: none;
+        padding: 5px 30px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+        color: #ffffff;
+        &:hover{
+            color: #088ff5;
+            background: #fff;
+            border: 1px solid #088ff5;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        text-align: center;
+         .ntg-icon-social{
+            justify-content: center;
+         }
+         .ntg-description{
+            text-align: justify;
+            margin: 16px 0;
+         }
+      }
+  }
+ 
+}

@@ -1,0 +1,28 @@
+.ntg-vision {
+  .ntg-vision-img {
+    position: absolute;
+    z-index: 1;
+    margin-top: 13px;
+  }
+  .ntg-vision-box {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-left: 178px;
+    position: relative;
+    .ntg-vision-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 47px 18px 42px 192px;
+    }
+  }
+  @media (max-width: 767px) {
+    .ntg-vision-box {
+      margin-left: 0;
+      .ntg-vision-text {
+        padding: 192px 18px 42px 47px;
+        text-align: center;
+      }
+    }
+  }
+}
