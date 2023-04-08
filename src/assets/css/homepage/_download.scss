@@ -1,25 +1,29 @@
-.ntg-download {
-  display: flex;
-  gap: 176px;
-  align-items: center;
-  .ntg-download-items {
-    .ntg-download-action {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+#ntg-download {
+  background: #16181f;
+  .ntg-download {
+    display: flex;
+    gap: 176px;
+    align-items: center;
+    padding: 32px 0;
+    .ntg-download-items {
+      .ntg-download-action {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .ntg-download-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
-    .ntg-download-text {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 22px;
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+      gap: 30px;
+      text-align: center;
     }
-  }
-  @media (max-width: 767px) {
-    flex-direction: column-reverse;
-    gap: 30px;
-    text-align: center;
-  }
-  @media (max-width: 991px) {
-    gap: 30px;
+    @media (max-width: 991px) {
+      gap: 30px;
+    }
   }
 }
