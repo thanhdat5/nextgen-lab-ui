@@ -1,0 +1,106 @@
+.ntg-unp-token {
+    background: rgba(0, 0, 0, 0.5);
+
+    .ntg-unp-token-content {
+        padding-top: 49px;
+
+        .ntg-unp-token-content-header {
+            .ntg-unp-token-title {
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 60px;
+                margin-bottom: 4px;
+                color: #ffffff;
+            }
+
+            .ntg-unp-token-des {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #ffffff;
+                .unit {
+                    color: #088FF5;
+                }
+            }
+        }
+
+        .ntg-unp-token-content-body {
+            margin-top: 51px;
+
+            .ntg-unp-token-items {
+                .ntg-unp-token-item {
+
+                    .ntg-unp-item-title {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        margin-bottom: 8px;
+
+                        .ntg-unp-item-dot {
+                            width: 12px;
+                            height: 12px;
+                            margin-right: 14px;
+
+                            &.fund-rais {
+                                background-color: #1A89FF;
+                            }
+
+                            &.play-earn {
+                                background-color: #6663FB;
+
+                            }
+
+                            &.team-advisor {
+                                background: #4581F2;
+                            }
+
+                            &.listing-marketing {
+                                background: #0EC5E5;
+                            }
+
+                            &.public-round {
+                                background: #29D6F4;
+                            }
+                        }
+
+
+                    }
+
+                    .ntg-unp-item-des {
+                        .percen {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 21px;
+                        }
+
+                        .unit {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #088FF5;
+                        }
+                    }
+                }
+            }
+
+            .line {
+                border: 0.5px solid #088FF5;
+            }
+        }
+
+        .ntg-unp-token-content-footer {
+            margin-top: 50px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            .footer-unit,.footer-percen{
+                font-weight:700;
+                color: #ffffff;
+            }
+        }
+
+    }
+}

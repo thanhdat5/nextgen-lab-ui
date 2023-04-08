@@ -101,6 +101,8 @@ $(function () {
     dots: true,
     centerMode: true,
     focusOnSelect: true,
-    dots:true
+    dots:true,
+    centerMode: true,
+    centerPadding: '-100px',
   })
 })

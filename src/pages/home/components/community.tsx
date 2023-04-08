@@ -93,8 +93,8 @@ const HomepageCommunity = () => {
                     <div className="ntg-our-product-items">
                         {
                             PRODUCTS.map(p => (
-                                <Link href={`/products/${p.id}`} className="ntg-our-product-item" key={p.id}>
-                                    <div className="ntg-prod-thumbnail">
+                                <Link href={`/products/${p.id}`} className="ntg-our-product-item" key={p.id} >
+                                    <div className="ntg-prod-thumbnail"> 
                                         <Image width={272} height={168} src={p.thumbnail} alt="" />
                                     </div>
                                     <div className="ntg-prod-info d-flex">
