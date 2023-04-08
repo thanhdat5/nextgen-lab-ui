@@ -16,6 +16,42 @@ body {
   background-color: rgb(34, 23, 71);
 }
 
+.ntg-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.ntg-action-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  display: inline-flex;
+  padding: 10px 20px;
+  min-width: 160px;
+  align-items: center;
+  border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .ntg-action-item {
+    width: calc(50% - 10px);
+  }
+}
+.ntg-action-item a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+.ntg-action-item a:hover {
+  color: #088ff5;
+}
+.ntg-action-item img {
+  margin-right: 10px;
+}
+
 @media (min-width: 1024px) {
   .container,
   .container-lg,
@@ -226,32 +262,6 @@ body {
     margin-top: 40px;
   }
 }
-.ntg-banner .ntg-action-items .ntg-action-item {
-  background-color: rgba(0, 0, 0, 0.5);
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 15px;
-  display: inline-flex;
-  padding: 10px 21px 10px 19px;
-  align-items: center;
-  border-radius: 5px;
-}
-@media (max-width: 767px) {
-  .ntg-banner .ntg-action-items .ntg-action-item {
-    width: calc(50% - 10px);
-  }
-}
-.ntg-banner .ntg-action-items .ntg-action-item a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: all ease-in-out 0.3s;
-}
-.ntg-banner .ntg-action-items .ntg-action-item a:hover {
-  color: #088ff5;
-}
-.ntg-banner .ntg-action-items .ntg-action-item img {
-  margin-right: 10px;
-}
 
 .ntg-about {
   background-image: url(../../images/bg-about.png);
@@ -306,13 +316,6 @@ body {
 
 .ntg-community {
   padding: 60px 0;
-}
-.ntg-community .ntg-community-update .title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 20px;
-  color: #fff;
 }
 .ntg-community .ntg-community-update .content {
   padding: 32px 30px;
@@ -614,13 +617,6 @@ body {
 .ngl-milestones * {
   position: relative;
 }
-.ngl-milestones .ngl-milestones-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
 .ngl-milestones .ngl-milestone {
   display: flex;
   height: 100%;
@@ -819,6 +815,164 @@ body {
 .ntg-unp-token .ntg-unp-token-content .ntg-unp-token-content-footer .footer-unit, .ntg-unp-token .ntg-unp-token-content .ntg-unp-token-content-footer .footer-percen {
   font-weight: 700;
   color: #ffffff;
+}
+
+.ntg-vision .ntg-vision-img {
+  position: absolute;
+  z-index: 1;
+  margin-top: 13px;
+}
+.ntg-vision .ntg-vision-box {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-left: 178px;
+  position: relative;
+}
+.ntg-vision .ntg-vision-box .ntg-vision-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 47px 18px 42px 192px;
+}
+@media (max-width: 767px) {
+  .ntg-vision .ntg-vision-box {
+    margin-left: 0;
+  }
+  .ntg-vision .ntg-vision-box .ntg-vision-text {
+    padding: 192px 18px 42px 47px;
+    text-align: center;
+  }
+}
+
+.ntg-gallery {
+  position: relative;
+  margin-top: 40px;
+}
+.ntg-gallery .ntg-gallery-img {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 10px;
+}
+.ntg-gallery .ntg-gallery-box {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-right: 178px;
+  margin-left: 0;
+}
+.ntg-gallery .ntg-gallery-box .ntg-gallery-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 47px 224px 42px 18px;
+}
+@media (max-width: 767px) {
+  .ntg-gallery .ntg-gallery-img {
+    top: 48px;
+  }
+  .ntg-gallery .ntg-gallery-box {
+    margin-right: 0;
+  }
+  .ntg-gallery .ntg-gallery-box .ntg-gallery-text {
+    padding: 262px 47px 42px 18px;
+    text-align: center;
+  }
+}
+
+.ntg-our-community_box {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  padding: 34px 30px;
+}
+.ntg-our-community_box .ntg-icon-social {
+  display: flex;
+  gap: 16px;
+}
+.ntg-our-community_box .ntg-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0px 48px;
+}
+.ntg-our-community_box .ntg-button button {
+  background: #088ff5;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 30px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+.ntg-our-community_box .ntg-button button:hover {
+  color: #088ff5;
+  background: #fff;
+  border: 1px solid #088ff5;
+}
+@media (max-width: 767px) {
+  .ntg-our-community_box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ntg-our-community_box .ntg-icon-social {
+    justify-content: center;
+  }
+  .ntg-our-community_box .ntg-description {
+    text-align: justify;
+    margin: 16px 0;
+  }
+}
+
+.ntg-content {
+  margin-bottom: 60px;
+}
+
+.ntg-partner {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 0;
+}
+.ntg-partner .ntg-partner-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+@media (max-width: 767px) {
+  .ntg-partner .ntg-partner-items {
+    padding: 20px;
+  }
+}
+.ntg-partner .ntg-partner-items .ntg-partner-item {
+  border: 1px solid;
+}
+
+.ntg-download {
+  display: flex;
+  gap: 176px;
+  align-items: center;
+}
+.ntg-download .ntg-download-items .ntg-download-action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ntg-download .ntg-download-items .ntg-download-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (max-width: 767px) {
+  .ntg-download {
+    flex-direction: column-reverse;
+    gap: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .ntg-download {
+    gap: 30px;
+  }
 }
 
 .ngl-product-detail {
@@ -1188,6 +1342,7 @@ body {
 .ngl-footer .ngl-footer-inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .ngl-footer .ngl-footer-inner {
@@ -1202,6 +1357,15 @@ body {
 @media (max-width: 767px) {
   .ngl-footer .ngl-footer-inner .ngl-footer-logo img {
     height: 36px;
+  }
+}
+.ngl-footer .ngl-footer-inner .ntg-footer-icon a {
+  display: inline-block;
+  padding: 0 16px 20px 0;
+}
+@media (max-width: 767px) {
+  .ngl-footer .ngl-footer-inner .ntg-footer-icon {
+    text-align: center;
   }
 }
 .ngl-footer .ngl-footer-inner .ngl-footer-copyright {
