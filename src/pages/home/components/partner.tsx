@@ -5,13 +5,13 @@ import React from "react";
 
 const HomepagePartner = () => {
   return (
-    <section className="ntg-partner">
+    <section className="npartners">
       <div className="container">
-        <div className="ntg-title">Strategic Partners</div>
-        <div className="ntg-partner-items">
+        <div className="nsect-title">Strategic Partners</div>
+        <div className="row row-cols-md-5 row-cols-4">
           {PARTNERS.map((item) => (
-            <div className="ntg-partner-item" key={item.id}>
-              <Link href="">
+            <div className="col" key={item.id}>
+              <Link className="npartner" href="">
                 <Image width={142} height={70} src={item.element} alt="" />
               </Link>
             </div>

@@ -1,51 +1,35 @@
 import Image from "next/image";
-import GameFi from "../../../assets/images/milestones/GameFi.png";
-import NFTTrades from "../../../assets/images/milestones/NFTTrades.png";
-import Players from "../../../assets/images/milestones/Players.png";
+import GameFi from "../../../assets/images/milestones/no1.png";
+import NFTTrades from "../../../assets/images/milestones/nft.png";
+import Players from "../../../assets/images/milestones/player.png";
+import { MILESTONES } from "@/constants/milestones";
+import Link from "next/link";
 
 const HomepageMilestones = () => {
-    return <section className="ngl-milestones">
-        <div className="container">
-            <div className="ntg-title">Milestones</div>
-            <div className="row">
-                <div className="col-4">
-                    <div className="ngl-milestone">
-                        <div className="ngl-milestone-icon">
-                            <Image src={GameFi} alt="" />
-                        </div>
-                        <div className="ngl-milestone-info">
-                            <div className="ngl-mi-title">NO.1</div>
-                            <div className="ngl-mi-description">MBOX Listed On Binance LaunchPool</div>
-                            <a href="#" className="ngl-mi-action">GameFi</a>
-                        </div>
-                    </div>
+  return (
+    <section className="nmilestones">
+      <div className="container">
+        <div className="nsect-title">Milestones</div>
+        <div className="row">
+          {MILESTONES.map((item) => (
+            <div className="col-4" key={item.id}>
+              <div className="nmilestone-item">
+                <div className="icon">
+                  <Image width="110" height="108" src={item.element} alt="" />
                 </div>
-                <div className="col-4">
-                    <div className="ngl-milestone">
-                        <div className="ngl-milestone-icon">
-                            <Image src={NFTTrades} alt="" />
-                        </div>
-                        <div className="ngl-milestone-info">
-                            <div className="ngl-mi-title">$300M+</div>
-                            <div className="ngl-mi-description">NFT Trades</div>
-                            <a href="#" className="ngl-mi-action">NFT Farmer</a>
-                        </div>
-                    </div>
+                <div className="info">
+                  <div className="title">{item.title}</div>
+                  <div className="description">{item.description}</div>
+                  <Link href="#" className="action">
+                    {item.link}
+                  </Link>
                 </div>
-                <div className="col-4">
-                    <div className="ngl-milestone">
-                        <div className="ngl-milestone-icon">
-                            <Image src={Players} alt="" />
-                        </div>
-                        <div className="ngl-milestone-info">
-                            <div className="ngl-mi-title">320K+</div>
-                            <div className="ngl-mi-description">Players</div>
-                            <a href="#" className="ngl-mi-action">Community</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          ))}
         </div>
+      </div>
     </section>
-}
-export default HomepageMilestones
+  );
+};
+export default HomepageMilestones;

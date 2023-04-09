@@ -1,0 +1,87 @@
+.necosystem {
+    padding: 22px 0 47px;
+    background-image: url(../../images/ecosystem/bg.png);
+    background-size: cover;
+    .nsect-title {
+      margin-bottom: 20px;
+    }
+    .row {
+      --bs-gutter-x: 20px;
+    }
+    .necosystem-tabs {
+      height: 100%;
+      padding: 42px 28px 20px 30px;
+      @media (max-width: 991px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      @media (max-width: 767px) {
+        padding: 20px 0;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        @media (max-width: 767px) {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          column-gap: 20px;
+        }
+        li {
+          cursor: pointer;
+          transition: all ease-in-out 0.3s;
+          color: #d9d9d9;
+          opacity: 0.5;
+          white-space: nowrap;
+          &:hover {
+            color: #fff;
+            opacity: 1;
+          }
+          &:not(:last-child) {
+            margin-bottom: 22px;
+            @media (max-width: 767px) {
+              margin-bottom: 10px;
+            }
+          }
+          &.active {
+            font-weight: 700;
+            color: #fff;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .necosystem-video {
+      height: 100%;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .necosystem-thumbnails {
+      display: flex;
+      flex-direction: column;
+      row-gap: 18px;
+      height: 100%;
+      @media (max-width: 767px) {
+        display: none;
+      }
+      a {
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #fff;
+        flex: 1;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }

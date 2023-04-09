@@ -4,45 +4,52 @@ import IconApple from "../../../assets/images/icon-apple.png";
 import IconAndroid from "../../../assets/images/icon-android.png";
 import IconChrome from "../../../assets/images/icon-chrome.png";
 import IconGooglePlay from "../../../assets/images/icon-gg-play.png";
+import Link from "next/link";
 
 const HomepageBanner = () => {
-    return <section className="ntg-banner">
+    return (
+        <section className="nbanner">
         <div className="container">
-            <div className="ntg-banner-title">
-                Unlocking the Future of<br />
-                Blockchain Innovation<br />
-                <span className="ntg-title-inner">NextGen Lab</span>
+            <h2>Unlocking the Future of <br />Blockchain Innovation</h2>
+            <h1>NextGen Lab</h1>
+            <div className="play">
+                <button type="button">
+                    <Image src={IconPlay} alt="" />
+                </button>
             </div>
-            <div className="text-center icon-play">
-                <Image src={IconPlay} alt="" />
-            </div>
-            <div className="ntg-action-items">
-                <div className="ntg-action-item">
-                    <Image src={IconApple} alt="" />
-                    <a href="#"
-                    >Download The <br />
-                        IOS Download</a>
+            <div className="ndownloads">
+              <Link href="#" className="ndownload-item">
+                <Image src={IconApple} alt="" />
+                <div>
+                  <div className="ndownload-text">Download The</div>
+                  <div className="ndownload-text">IOS Download</div>
                 </div>
-                <div className="ntg-action-item">
-                    <Image src={IconAndroid} alt="" />
-                    <a href="#"
-                    >Download The <br />
-                        Android APP</a>
+              </Link>
+              <Link href="#" className="ndownload-item">
+                <Image src={IconAndroid} alt="" />
+                <div>
+                  <div className="ndownload-text">Download The</div>
+                  <div className="ndownload-text">Android APP</div>
                 </div>
-                <div className="ntg-action-item">
-                    <Image src={IconChrome} alt="" />
-                    <a href="#"
-                    >Download The <br />
-                        Chrome Plugin</a>
+              </Link>
+              <Link href="#" className="ndownload-item">
+                <Image src={IconChrome} alt="" />
+                <div>
+                  <div className="ndownload-text">Download The</div>
+                  <div className="ndownload-text">Chrome Plugin</div>
                 </div>
-                <div className="ntg-action-item">
-                    <Image src={IconGooglePlay} alt="" />
-                    <a href="#"
-                    >Download The <br />
-                        Google Play</a>
+              </Link>
+              <Link href="#" className="ndownload-item">
+                <Image src={IconGooglePlay} alt="" />
+                <div>
+                  <div className="ndownload-text">Download The</div>
+                  <div className="ndownload-text">Google Play</div>
                 </div>
+              </Link>
             </div>
         </div>
     </section>
+
+    )
 }
 export default HomepageBanner

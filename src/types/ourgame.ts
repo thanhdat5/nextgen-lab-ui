@@ -1,8 +1,6 @@
-export type Ourgame = {
-    id: number;
-    image: string;
-    shortDescription: string;
-    featuresClassName: string;
-    link: string
-  };
-  
+export type OurGame = {
+  id: number;
+  image: string;
+  description: string;
+  link: string;
+};

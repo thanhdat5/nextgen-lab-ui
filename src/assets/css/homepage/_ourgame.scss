@@ -1,45 +1,79 @@
-.ntg-our-game {
-    padding: 58px 0;
-
-    .ntg-our-game-header {
+.ngames {
+    padding: 58px 0 64px;
+    position: relative;
+    .nsect-title {
+      margin-bottom: 20px;
+    }
+    .ngames-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+      .nsect-title {
+        margin-bottom: 0;
+      }
+      a {
+        font-size: 10px;
+        line-height: 15px;
+        display: inline-flex;
+        align-items: center;
+        color: #088ff5;
+        transition: all ease-in-out 0.3s;
+        &:hover {
+          color: #0ec5e5;
+        }
+      }
+    }
+    .row {
+      --bs-gutter-x: 24px;
+      --bs-gutter-y: 24px;
+      @media (max-width: 767px) {
+        --bs-gutter-x: 12px;
+        --bs-gutter-y: 12px;
+      }
+    }
+    .ngame-item {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      height: 222px;
+      position: relative;
+      .image {
+        height: 166px;
         display: flex;
-        justify-content: space-between;
-
-        .ntg-our-game-content-title {
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 30px;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
         }
-
-        .ntg-our-game-content-tutorials {
-            font-weight: 400;
-            font-size: 10px;
-            line-height: 15px
+      }
+      .info {
+        position: absolute;
+        top: auto;
+        bottom: 10px;
+        left: 12px;
+        right: 12px;
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        @media (max-width: 991px) {
+          font-size: 12px;
+          line-height: 1.3;
         }
+        .action {
+          font-size: 10px;
+          line-height: 15px;
+          color: #088ff5;
+          white-space: nowrap;
+          margin-bottom: 14px;
+          transition: all ease-in-out 0.3s;
+          &:hover {
+            color: #0ec5e5;
+          }
+        }
+      }
     }
-
-    .ntg-our-game-content {
-        .ntg-our-game-item {
-            .card {
-                background: rgba(0, 0, 0, 0.5);
-                border-radius: 10px;
-                min-height: 278px;
-                .card-body {
-                    padding-top: 20px;
-                    .card-text {
-                        font-weight: 400;
-                        font-size: 14px;
-                        width: 70%;
-                    }
-
-                    .card-link {
-                        font-weight: 400;
-                        font-size: 10px;
-                        line-height: 15px;
-                        width: 30%;                    }
-                }
-            }
-        }
-    }
-
-}
+  }
+  

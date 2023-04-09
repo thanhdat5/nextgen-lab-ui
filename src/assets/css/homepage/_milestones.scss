@@ -1,41 +1,23 @@
-.ngl-milestones {
+.nmilestones {
   padding: 29px 0 42px;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 1142.11px;
-    height: 355.6px;
-    bottom: 18px;
-    right: 21%;
-    background-color: rgba(0, 0, 0, 0.5);
-    filter: blur(200px);
-    transform: rotate(-180deg);
+  background-image: url(../../images/milestones/bg.png);
+  background-size: cover;
+  .nsect-title {
+    margin-bottom: 20px;
   }
-  * {
-    position: relative;
-  }
-  .ngl-milestone {
+  .nmilestone-item {
     display: flex;
     height: 100%;
     @media (max-width: 767px) {
-       flex-direction: column;
-       justify-content: center;
-       text-align: center;
+      flex-direction: column;
+      align-items: center;
     }
-    .ngl-milestone-icon {
-      margin-right: 11px;
+    .icon {
       width: 110px;
-      height: 100%;
-      overflow: hidden;
+      margin-right: 10px;
       @media (max-width: 767px) {
-        height: 80px;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-        img{
-            object-fit: contain !important;
-        }
+        width: 60px;
+        margin-right: 0;
       }
       img {
         width: 100%;
@@ -43,49 +25,51 @@
         object-fit: cover;
       }
     }
-    .ngl-milestone-info {
-      padding: 5px 0;
+    .info {
       flex: 1;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      .ngl-mi-title {
+      align-items: flex-start;
+      @media (max-width: 767px) {
+        align-items: center;
+        text-align: center;
+      }
+      .title {
         font-weight: 700;
         font-size: 20px;
         line-height: 30px;
         color: #088ff5;
       }
-      .ngl-mi-description {
-        font-weight: 400;
+      .description {
         font-size: 12px;
         line-height: 20px;
-        color: #ffffff;
-        margin-bottom: 3px;
         width: 130px;
         max-width: 100%;
+        padding-bottom: 5px;
         @media (max-width: 767px) {
-          width: 100%;
+          width: auto;
           line-height: 1.3;
-          margin-bottom: 10px;
+          padding-bottom: 8px;
         }
       }
-      .ngl-mi-action {
+      .action {
+        width: 100px;
+        white-space: nowrap;
         margin-top: auto;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 100px;
-        height: 25px;
         background-color: #088ff5;
         border-radius: 5px;
-        text-decoration: none;
-        transition: all ease-in-out 0.3s;
-        font-weight: 400;
+        padding: 5px 30px;
         font-size: 10px;
         line-height: 15px;
         color: #ffffff;
+        transition: all ease-in-out 0.3s;
         &:hover {
-          color: #088ff5;
-          background-color: #ffffff;
+          background-color: #0ec5e5;
+          box-shadow: 1px 0px 10px rgba($color: #088ff5, $alpha: 0.4);
         }
       }
     }
