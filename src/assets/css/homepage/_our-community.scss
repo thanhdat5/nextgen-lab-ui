@@ -1,49 +1,40 @@
-.ntg-our-community {
-  &_box {
+.ncommunity {
+  padding-bottom: 59px;
+  .ncommunity-inner {
+    padding: 34px 30px 20px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     display: flex;
-    padding: 34px 30px;
-   
-    .ntg-icon-social {
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+    }
+    .ncommunity-socials {
       display: flex;
       gap: 16px;
-    }
-    .ntg-description {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 22px;
-      padding: 0px 48px;
-    }
-    .ntg-button {
-      button {
-        background: #088ff5;
-        border-radius: 5px;
-        border: none;
-        padding: 5px 30px;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 15px;
-        text-align: center;
-        color: #ffffff;
-        &:hover{
-            color: #088ff5;
-            background: #fff;
-            border: 1px solid #088ff5;
-        }
+      img {
+        height: 52px;
       }
     }
-    @media (max-width: 767px) {
-        flex-direction: column;
-        text-align: center;
-         .ntg-icon-social{
-            justify-content: center;
-         }
-         .ntg-description{
-            text-align: justify;
-            margin: 16px 0;
-         }
+    .ncommunity-act {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #088ff5;
+      border-radius: 5px;
+      padding: 5px 30px;
+      font-size: 10px;
+      line-height: 15px;
+      color: #fff;
+      transition: all ease-in-out 0.3s;
+      &:hover {
+        background-color: #0ec5e5;
+        box-shadow: 1px 0px 10px rgba($color: #088ff5, $alpha: 0.4);
       }
+    }
   }
- 
 }

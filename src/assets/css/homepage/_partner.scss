@@ -1,20 +1,29 @@
-.ntg-partner {
+.npartners {
+  padding: 40px 0 42px;
   background: rgba(0, 0, 0, 0.5);
-  padding: 40px 0;
-  .ntg-partner-items {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px ;
-    column-gap:30px;
-    @media (max-width:767px) {
-        padding: 16px;
+  .row {
+    --bs-gutter-x: 31px;
+    --bs-gutter-y: 20px;
+    @media (max-width: 767px) {
+      --bs-gutter-x: 10px;
+      --bs-gutter-y: 10px;
     }
-    .ntg-partner-item {
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 5px;
-      &:hover{
-        border: 1px solid #fff;
-      }
+  }
+  .npartner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    max-height: 70px;
+    transition: all ease-in-out 0.3s;
+    &:hover {
+      border-color: rgba($color: #0ec5e5, $alpha: 0.8);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
 }

@@ -1,18 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 body {
   background: $background-color;
   font-family: $font-family;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  color: #e1e1e1;
+  font-size: 14px;
+  line-height: 22px;
+  color: $white-color;
+  position: relative;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-
+a{
+  text-decoration: none;
+}
 ::-webkit-scrollbar-thumb {
   background-color: rgb(34, 23, 71);
+}
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 864px;
+  }
+}
+@media (max-width: 767px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    --bs-gutter-x: 40px;
+  }
 }
 .ntg-title {
   font-weight: 700;
@@ -20,6 +44,62 @@ body {
   line-height: 30px;
   color: #ffffff;
   margin-bottom: 20px;
+}
+.nsect-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 22px;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+.ndownloads {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 22px;
+  column-gap: 20px;
+  .ndownload-item {
+    display: flex;
+    padding: 9px 19px;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    max-width: 100%;
+    background: #16181f;
+    border-radius: 5px;
+    &:hover {
+      .ndownload-text {
+        color: #0ec5e5;
+      }
+    }
+    .ndownload-icon {
+      margin-right: 10px;
+    }
+    .ndownload-text {
+      font-size: 10px;
+      line-height: 15px;
+      margin-bottom: 0;
+      flex: 1;
+      color: #fff;
+      white-space: nowrap;
+      transition: all ease-in-out 0.3s;
+    }
+  }
+}
+.download-decor {
+  position: absolute;
+  bottom: -300px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.ourgame-decor {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  
 }
 .ntg-action-item {
   background-color: rgba(0, 0, 0, 0.5);

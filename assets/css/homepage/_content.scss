@@ -1,0 +1,33 @@
+.ntg-section-content{
+    background: linear-gradient(90deg, #0047ff 0.89%, #48f3ff 98.21%);
+    .ntg-content {
+        padding: 0 208px;
+        &_text {
+          margin: 50px 0;
+          color: $white-color;
+          padding-left: 30px;
+          h3 {
+            font-size: 40px;
+            line-height: 60px;
+            font-weight: $font-weight-700;
+          }
+          p{
+              font-size: 14px;
+              line-height: 22px;
+              font-weight: $font-weight-400;
+              margin: 0;
+          }
+          .ntg-content-list{
+              p{
+                  margin: 0;
+                  line-height: 24px;
+                  span{
+                      color: #0047ff;
+                      padding-right: 4px;
+                  }
+              }
+          }
+        }
+      }
+}
+  

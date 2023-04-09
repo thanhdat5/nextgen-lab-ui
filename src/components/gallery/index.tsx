@@ -1,26 +1,22 @@
 import React from "react";
 import Image2 from "../../assets/images/content/item-2.png";
 import Image from "next/image";
-const Gallery = () => {
+const NGallery = () => {
   return (
-    <div className="ntg-gallery">
-      <div className="ntg-title">Gallery</div>
-      <div>
-      <div className="ntg-gallery-img">
-          <Image src={Image2} alt="" />
+    <section className="ngallery">
+    <div className="container">
+        <div className="ngallery-inner">
+            <div className="nsect-title">Gallery</div>
+            <div className="ngallery-body">
+                <p>Our vision is that no NFT metaverse should be singular but rather each metaverse can be
+                    interconnected giving each unique NFT increased utility through NFT interoperability between
+                    games and platforms.</p>
+            </div>
+            <Image src={Image2} alt="" />
         </div>
-        <div className="ntg-gallery-box">
-          <p className="ntg-gallery-text">
-            Our vision is that no NFT metaverse should be singular but rather
-            each metaverse can be interconnected giving each unique NFT
-            increased utility through NFT interoperability between games and
-            platforms.
-          </p>
-        </div>
-        
-      </div>
     </div>
+</section>
   );
 };
 
-export default Gallery;
+export default NGallery;
