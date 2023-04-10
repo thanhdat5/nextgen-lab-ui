@@ -6,9 +6,8 @@ import "../assets/css/style.scss";
 import Layout from './_layout';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { Poppins } from 'next/font/google'
 
-const poppins = Poppins({ weight: ['400', '500', '600', '700'], subsets: ['latin'] })
+
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   useEffect(() => {
@@ -19,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events]);
 
-  return <div className={poppins.className}>
+  return <div>
     <Layout>
       <Component {...pageProps} />
     </Layout>

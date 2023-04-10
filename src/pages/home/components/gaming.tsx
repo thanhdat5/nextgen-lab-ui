@@ -9,6 +9,8 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { NFT_GAMES } from "@/constants/nft-game";
 import { NFTGame } from "@/types/nft";
+import $ from "jquery"
+import Link from "next/link";
 const HomepageGaming = () => {
   const [selectedNFT, setSelectedNFT] = useState(3);
   const nftImageRef = useRef<any>(null);
@@ -53,6 +55,15 @@ const HomepageGaming = () => {
       });
     });
   }, []);
+  const handlePrevClick = () => {
+    setSelectedNFT(selectedNFT > 1 ? selectedNFT - 1 : 4);
+    $(`#GamingNFTTab button:nth-child(${selectedNFT})`).trigger('click');
+  };
+
+  const handleNextClick = () => {
+    setSelectedNFT(selectedNFT < 4 ? selectedNFT + 1 : 1);
+    $(`#GamingNFTTab button:nth-child(${selectedNFT})`).trigger('click');
+  };
   //   if (nftImageRef.current) {
   //     nftImageRef.current.src = selectedItem?.image ?? '';
   //   }
@@ -121,8 +132,8 @@ const HomepageGaming = () => {
             tabIndex={0}
           >
             <div className="narrows">
-              <Image className="narrow prev" src={ArrowPrev} alt="" />
-              <Image className="narrow next" src={ArrowNext} alt="" />
+              <Image className="narrow prev" onClick={handlePrevClick} src={ArrowPrev} alt="" />
+              <Image className="narrow next" onClick={handleNextClick} src={ArrowNext} alt="" />
             </div>
             <div className="row">
               <div className="col-md-4">
@@ -227,7 +238,7 @@ const HomepageGaming = () => {
                       the platform.
                     </div>
                     <div className="nft-action">
-                      <a href="#">
+                      <Link href="#">
                         <span>BOX Raffle</span>
                         <svg
                           width="16"
@@ -241,8 +252,8 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <span>Buy BOX</span>
                         <svg
                           width="16"
@@ -256,8 +267,8 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <span>Buy MONO</span>
                         <svg
                           width="16"
@@ -271,7 +282,7 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div
@@ -292,7 +303,7 @@ const HomepageGaming = () => {
                       the platform.
                     </div>
                     <div className="nft-action">
-                      <a href="#">
+                      <Link href="#">
                         <span>BOX Raffle</span>
                         <svg
                           width="16"
@@ -306,8 +317,8 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <span>Buy BOX</span>
                         <svg
                           width="16"
@@ -321,8 +332,8 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <span>Buy MONO</span>
                         <svg
                           width="16"
@@ -336,7 +347,7 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div
@@ -357,7 +368,7 @@ const HomepageGaming = () => {
                       the platform.
                     </div>
                     <div className="nft-action">
-                      <a href="#">
+                      <Link href="#">
                         <span>BOX Raffle</span>
                         <svg
                           width="16"
@@ -371,8 +382,8 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <span>Buy BOX</span>
                         <svg
                           width="16"
@@ -386,8 +397,8 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <span>Buy MONO</span>
                         <svg
                           width="16"
@@ -401,7 +412,7 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div
@@ -422,7 +433,7 @@ const HomepageGaming = () => {
                       the platform.
                     </div>
                     <div className="nft-action">
-                      <a href="#">
+                      <Link href="#">
                         <span>BOX Raffle</span>
                         <svg
                           width="16"
@@ -436,8 +447,8 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <span>Buy BOX</span>
                         <svg
                           width="16"
@@ -451,8 +462,8 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link href="#">
                         <span>Buy MONO</span>
                         <svg
                           width="16"
@@ -466,7 +477,7 @@ const HomepageGaming = () => {
                             fill="currentColor"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

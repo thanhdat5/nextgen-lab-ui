@@ -2,6 +2,7 @@ import React from 'react'
 import Video from "../../../assets/images/ecosystem/video-preview.png"
 import Thumbnail from "../../../assets/images/ecosystem/thumbnail.png"
 import Image from 'next/image'
+import Link from 'next/link'
 const HomepageEcosystem = () => {
   return (
     <section className="necosystem">
@@ -26,15 +27,15 @@ const HomepageEcosystem = () => {
                 </div>
                 <div className="col-md-2">
                     <div className="necosystem-thumbnails">
-                        <a href="#">
+                        <Link href="#">
                             <Image src={Thumbnail} alt="" />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link href="#">
                             <Image src={Thumbnail} alt="" />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link href="#">
                             <Image src={Thumbnail} alt="" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

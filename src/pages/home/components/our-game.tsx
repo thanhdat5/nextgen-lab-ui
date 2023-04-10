@@ -11,10 +11,10 @@ const HomepageOutGame = () => {
         <div className="container">
           <div className="ngames-header">
             <div className="nsect-title">Our Games</div>
-            <a href="#">
+            <Link href="#">
               Full Course for Beginners [Tutorials]
               <Image src={IconShare} alt="" />
-            </a>
+            </Link>
           </div>
           <div className="row">
             {OURGAMES.map((item) => (
